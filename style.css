@@ -32,3 +32,5 @@ canvas { display:  block; margin: 0 auto 10px auto;}
 .speedControl { display: flex; justify-content: center; gap: 10px; opacity: 0.7;}
 .speedControl button { padding: 5px 10px; font-size: 15px; color: antiquewhite; border: none; border-radius: 10px; background: rgba(0,0,0,0.5) ;}
 .speedControl > span {  padding: 5px 10px; font-size: 15px; color: antiquewhite; transform: translateY(5px); }
+
+.git { display: block; margin: 20px 0 20px 0; font-size: 15px; color: antiquewhite; text-align: center; }
