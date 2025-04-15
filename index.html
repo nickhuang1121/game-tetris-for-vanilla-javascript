@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1, maximum-scale=1,user-scalable=no">
+    <title>Game Tetris for Vanilla Javascript</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="canvas" width="1" height="1"></canvas>
+<div class="textScore">成績:<span id="score"></span></div>
+<div class="usetControl">
+    <div class="crossKey">
+        <div class="up" id="up">up</div>
+        <div class="down" id="down">down</div>
+        <div class="left" id="left">left</div>
+        <div class="right" id="right">right</div>
+    </div>
+    <div class="roundKey">
+        <div class="roundA" id="roundA">A</div>
+        <div class="roundB" id="roundB">B</div>
+    </div>
+</div>
+<div class="speedControl">
+    <button onclick="addSpeed()">加速</button>
+    <button onclick="reduceSpeed()">減速</button>
+    <span>現在速度<span id="speed"></span>毫秒</span>
+</div>
+<div class="gameOver" id="gameOver">
+    <p>遊戲結束</p>
+    <p><small>你的成績:<span id="finalScore">0</span></small></p>
+
+   <div class="historyScore">
+        <ul id="historyScoreList" class="historyScoreList"></ul>
+   </div>
+   <p><small>你的名字:<input type="text" id="userNameInput" placeholder="你的外號" value="none" /></small></p>
+    <div class="gameButton">
+        <button type="button" onclick="replayGame()">再玩一次</button>
+        <button type="button" onclick="pushNewScoreToLocalScoreBoard()">儲存成績</button>
+    </div>
+    
+</div>
+<script src="header.js"></script>
+<script src="colors.js"></script>
+<script src="block.js"></script>
+<script src="blocks.js"></script>
+<script src="user_control.js"></script>
+<script src="score_board.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

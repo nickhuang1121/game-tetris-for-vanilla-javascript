@@ -1,0 +1,34 @@
+* { box-sizing:  border-box;}
+html, body {touch-action: manipulation;}
+body { background: #007074;}
+canvas { display:  block; margin: 0 auto 10px auto;}
+.textScore { position: fixed; top: 0; left: 0; width: 100%; font-size: 30px; text-align:  center; color: aliceblue; z-index: 100; background:#007074 ;}
+.usetControl {display:  flex; margin: 0 auto 10px auto; width: 90%; max-width: 300px; height: 150px;}
+.usetControl > div { position: relative; display: block; width: 50%; height: 100%; }
+.crossKey > div { position: absolute; display:  flex; justify-content: center; align-items: center; color: rgba(255,255,255,0.5); background: #B03052;}
+.up,.down { top: 0; left: calc(50% - 25px); width: 50px; height: 60px;border-radius: 10px 10px 0 0;}
+.down { top: calc(50% + 15px); border-radius: 0 0 10px 10px ;}
+.left,.right { top: calc(50% - 25px); left:0; width: 60px; height: 50px;border-radius: 10px 0 0 10px;}
+.right { left: calc(50% + 15px);border-radius: 0 10px 10px 0;}
+
+.roundKey { position: relative;}
+.roundKey > div { position: absolute; display: flex; justify-content: center; align-items: center; font-size: 30px; color: rgba(255,255,255,0.5); width: 70px; height: 70px; border-radius: 99em; background:#3D0301 ;}
+.roundA{ bottom: 10px; left: 10px;}
+.roundB{ top: 10px; right: 10px;}
+
+.gameOver { display: none; position: fixed; justify-content: center; align-content: center; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.75);backdrop-filter: blur(5px);z-index: 150;}
+.gameOver.show{ display: block;}
+.gameOver p { margin-bottom: 10px; font-size: 50px; text-align: center; color: antiquewhite;}
+.gameOver p small { display: flex; justify-content: center; font-size: 0.6em;}
+.gameOver p input { display: inline-block; color: antiquewhite; background: none;}
+
+.historyScoreList { margin-bottom: 30px; font-size: 16px; text-align: center; color: antiquewhite;}
+.historyScoreList li { display: block; margin-bottom: 10px;}
+
+.gameButton { display: flex; justify-content: center; gap: 10px;}
+.gameButton button { padding: 5px; font-size: 25px; color: antiquewhite; border: none; background: #D76C82 ;}
+.gameButton button:nth-child(2) { background:#57B4BA ;}
+
+.speedControl { display: flex; justify-content: center; gap: 10px; opacity: 0.7;}
+.speedControl button { padding: 5px 10px; font-size: 15px; color: antiquewhite; border: none; border-radius: 10px; background: rgba(0,0,0,0.5) ;}
+.speedControl > span {  padding: 5px 10px; font-size: 15px; color: antiquewhite; transform: translateY(5px); }
